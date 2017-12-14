@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vanilla and Redux, Sittin' in a tree!</title>
+  <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+  <script src="https://npmcdn.com/redux-thunk@2.0.1/dist/redux-thunk.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    var datum = {
+      counter: 0,
+    };
+  </script>
+  <script src="reducers.js"></script>
+  <script src="bootstrap.js"></script>
+  <script src="increment_button.js"></script>
+  <script src="counter.js"></script>
+  <script src="stock-update.js"></script>
+  <script src="stock-ticker.js"></script>
+  <div class="container">
+    <div>
+      <button class="increment-button">
+        +1
+      </button>
+      <div class="counter">0</div>
+    </div>
+    <div>
+      <button class="update-stock">
+        Update Stock Price
+      </button>
+      <div class="stock-price">145.95</div>
+    </div>
+  </div>
+</body>
+</html>
